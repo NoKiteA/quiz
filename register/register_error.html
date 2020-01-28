@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style/login.css">
+    <title>Register</title>
+</head>
+<body>
+    <p class="error">Użytkownik o takiej Nazwie już istnieje, wybierz inną nazwę.</p>
+    <form method="POST" action="../php/login/register.php">
+        <h1>Witaj w quizie na temat JavaScript</h1>
+        <h3>Zarejestruj się by móc zagrać!</h3>
+        <div class="formItem">
+            <input
+                class="input"
+                type="text"
+                name="username"
+                id="username"
+                placeholder=" "
+            />
+            <label for="username" class="label">User Name</label>
+            <div class="formItemBar"></div>
+        </div>
+
+        <div class="formItem">
+            <input
+                class="input"
+                type="password"
+                name="passwd"
+                id="passwd"
+                placeholder=" "
+            />
+            <label for="passwd" class="label">Password</label>
+            <div class="formItemBar"></div>
+        </div>
+        <input type="submit" class="sub" name="sub" id="sub" value="Register!" />
+    </form>
+    <p>Jeżeli masz już konto, zaloguj się <a href="/quiz">tutaj</a></p>
+</body>
+</html>

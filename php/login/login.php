@@ -11,6 +11,6 @@
         $username = $_POST['username'];
         $passwd = $_POST['passwd'];
 
-        $users->getUser($username, $username);
+        $users->getUser($username, $passwd);
     }
 ?>

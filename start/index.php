@@ -1,6 +1,6 @@
 <?php
     session_start();
-    if(!isset($_SESSION['user'])) {
+    if(!isset($_SESSION['id'])) {
         header("Location: http://localhost/quiz/");
     }
 ?>
@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <form name="quizForm" method="POST" class="form">
+        <form name="quizForm" method="POST" class="form" action="./results.php">
             <div class="question active">
                 <h3 class="questionHeader">1. W jakim znaczniku umieszczamy kod JavaScript?</h3>
                 <div class="answers">
@@ -227,9 +227,9 @@
             
             <br>
             <input type="submit" class="sub" name="sub" value="Prześlij odpowiedzi">
+            <a class="next sub active">Next</a>
         </form>
         <br>
-        <button class="next active">Next</button>
 
         <form method="POST" action="../php/login/logout.php" class="logout">
             <input type="submit" class="sub active" name="sub" value="Wyloguj się!"/> 
