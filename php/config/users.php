@@ -65,7 +65,6 @@
             }
         }
 
-        //TODO: Update function
         public function update($id, $score) {
             $query = "UPDATE users SET max_points=$score WHERE id=$id";
             $this->con -> query($query);
